@@ -33,7 +33,8 @@ add_executable(${TEST_PROJECT_NAME}
         TransactionRecordTest.cc
         TransactionResponseTest.cc
         TransferTest.cc
-        TransferTransactionTest.cc)
+        TransferTransactionTest.cc
+        SerializeAndDeserializeTest.cc)
 target_link_libraries(${TEST_PROJECT_NAME} PRIVATE gtest_main gtest ${PROJECT_NAME})
 gtest_discover_tests(${TEST_PROJECT_NAME} WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/release)
 
