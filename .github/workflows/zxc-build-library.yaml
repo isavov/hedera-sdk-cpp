@@ -96,5 +96,5 @@ jobs:
           path: package/
           if-no-files-found: warn
 
-      #- name: Stop the local node
-      #  run: sudo npx @hashgraph/hedera-local stop
+      - name: Stop the local node
+        run: sudo npx @hashgraph/hedera-local stop
